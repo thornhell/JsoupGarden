@@ -1,4 +1,4 @@
-package com.ms.jsoupgarden;
+package com.ms.pogodynka;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -15,14 +15,14 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Application {
+public class Pogodynka {
 
 
     public static final String url = "http://pogodynka.pl";
 
     public static void main(String[] args) throws Exception {
 
-        Application parser = new Application();
+        Pogodynka parser = new Pogodynka();
         Iterator iterator = parser.checkBaseLinks().iterator();
         while (iterator.hasNext()) {
             Object element = iterator.next();
